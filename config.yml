@@ -1,11 +1,39 @@
+# Project 0: UNIX/Python Tutorial
 P0:
-  path: '../proj0-solution/'
   student_files: ['addition.py', 'shopSmart.py', 'buyLotsOfFruit.py']
 
+# Project 1: Search
 P1:
-  path: '../proj1-solution/'
   student_files: ['search.py', 'searchAgents.py']
 
+# Project 2: Multiagent Pathfinding
 P2:
-  path: '../proj2/'
   student_files: ['SingleAgentState.py', 'MultiagentState.py']
+
+# Contest 1: Multi-Agent Pacman
+C1:
+  student_files: ['myAgents.py']
+
+# Project 3: Multi-Player Games
+P3:
+  student_files: ['mutliAgents.py']
+
+# Contest 2: Game Theory
+C2:
+  student_files: ['MyPlayer.py']
+
+# Project 4: Reinforcement Learning
+P4:
+  student_files: ['valueIterationAgents.py', 'qlearningAgents.py', 'analysis.py']
+
+# Project 5: Ghostbusters
+P5:
+  student_files: ['bustersAgents.py', 'inference.py']
+
+# Project 6: Machine Learning
+P6:
+  student_files: ['models.py']
+
+# Contest 3: Multi-Agent Adversarial Pacman
+C3:
+  student_files: ['myTeam.py']
