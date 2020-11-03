@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
 import csv
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-dst', '--dst-dir', help='Path to destination directory',
+                    default='', type=str)
+args = parser.parse_args()
 
 student_grades = {}
-with open('grades-P1.txt', mode='r') as txt_file:
+with open('grades.txt', mode='r') as txt_file:
     for line in txt_file:
-        flag = False
-        if '/proj1/' in line:
+        # Ignore this
+        if '/'+args.dst in line:
             continue
-        if 'proj1/' in line:
+        # Student submission raised an error
+        if args.dst in line:
             student_info = line.split('/')[-1]
             student_grades[student_info] = -999
+        # Student submission ran successfully
         if 'Total:' in line:
             points = int(line.split('/')[0].split(' ')[-1])
             student_grades[student_info] = points
 
-with open('grades-P1.csv', mode='w') as csv_file:
+with open('grades.csv', mode='w') as csv_file:
     fieldnames = ['Name', 'UIN', 'Grades']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
