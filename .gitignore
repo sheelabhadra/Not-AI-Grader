@@ -1,0 +1,7 @@
+pycache/
+proj*
+*.csv
+*.txt
+*.pyc
+.DS_Store
+

@@ -1,0 +1,11 @@
+P0:
+  path: '../proj0-solution/'
+  student_files: ['addition.py', 'shopSmart.py', 'buyLotsOfFruit.py']
+
+P1:
+  path: '../proj1-solution/'
+  student_files: ['search.py', 'searchAgents.py']
+
+P2:
+  path: '../proj2/'
+  student_files: ['SingleAgentState.py', 'MultiagentState.py']
